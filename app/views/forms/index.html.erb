@@ -1,0 +1,15 @@
+
+
+<div class="test">
+<% @forms.each do |form| %>
+<div class="panel panel-default">
+  <div class="panel-heading"><%= link_to form.title, form %></div>
+  <div class="panel-body">
+    <%= form.message %>
+  </div>
+</div>
+<% end %>
+
+</div>
+<%= link_to 'New Form', new_form_path %>
+
